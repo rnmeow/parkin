@@ -3,7 +3,7 @@
   "type": "module",
   "importMap": "import-map.jsonc",
   "tasks": {
-    "dev": "deno run --allow-net --allow-read server.ts --unstable --watch=src/"
+    "start": "deno run --allow-net server.ts"
   },
   "fmt": {
     "semiColons": false,
