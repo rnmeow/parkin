@@ -23,12 +23,11 @@ export const PageHead = {
 }
 
 export const PageBody = (req: Request) => (
-  <div class='cont'>
+  <div>
     <h1>Hello World!</h1>
     <p>
-      You're visiting {(new URL(req.url)).hostname} and the domain is owned by
-      {' '}
-      <a href='https://nekohuan.cyou'>rnmeow</a>.
+      You're visiting <code>{(new URL(req.url)).hostname}</code>{' '}
+      and the domain is owned by <a href='https://nekohuan.cyou'>rnmeow</a>.
       <br />
       It is currently under development. Feel free to check for updates anytime!
     </p>
