@@ -5,6 +5,7 @@ export const PageHead = {
   lang: 'en',
   title: "It's Parkin'",
   meta: {
+    viewport: 'width=device-width, initial-scale=1, shrink-to-fit=no',
     description: 'This website is UNDER DEVELOPMENT.',
   },
   links: [
