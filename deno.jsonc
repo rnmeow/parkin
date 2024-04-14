@@ -1,0 +1,14 @@
+{
+  "private": true,
+  "type": "module",
+  "importMap": "import-map.jsonc",
+  "tasks": {
+    "dev": "deno run --allow-net --allow-read server.ts --unstable --watch=src/"
+  },
+  "fmt": {
+    "semiColons": false,
+    "singleQuote": true,
+    "proseWrap": "preserve",
+    "include": ["src/"]
+  }
+}
