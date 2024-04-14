@@ -36,7 +36,9 @@ export const PageBody = (req: Request) => (
     </p>
     <p>
       The source of this page is available{' '}
-      <a href='https://github.com/rnmeow/parkin'>here</a>.
+      <a href='https://github.com/rnmeow/parkin' title='GitHub repo'>
+        here
+      </a>.
     </p>
     <footer>
       &copy; {new Date().getFullYear()}, Yu-huan Kuo.
