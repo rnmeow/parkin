@@ -1,7 +1,7 @@
 {
   "private": true,
   "type": "module",
-  "importMap": "import-map.jsonc",
+  "importMap": "import_map.jsonc",
   "tasks": {
     "start": "deno run --allow-net server.ts"
   },
