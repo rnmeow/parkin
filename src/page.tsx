@@ -11,8 +11,6 @@ export const PageHead = {
   links: [
     { rel: 'preconnect', href: 'https://cdn.jsdelivr.net', crossorigin: '' },
     { rel: 'dns-prefetch', href: 'https://cdn.jsdelivr.net' },
-    { rel: 'prerender', href: 'https://nekohuan.cyou' },
-    { rel: 'prerender', href: 'https://github.com/rnmeow/parkin' },
     {
       rel: 'shortcut icon',
       href: 'https://img.rnmeow.com/favicon.svg',
