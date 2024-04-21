@@ -9,8 +9,8 @@ export const PageHead = {
     description: 'This website is UNDER DEVELOPMENT.',
   },
   links: [
-    { rel: 'preconnect', href: 'https://cdn.jsdelivr.net', crossorigin: '' },
-    { rel: 'dns-prefetch', href: 'https://cdn.jsdelivr.net' },
+    { rel: 'preconnect', href: 'https://unpkg.com', crossorigin: '' },
+    { rel: 'dns-prefetch', href: 'https://unpkg.com' },
     {
       rel: 'shortcut icon',
       href: 'https://img.rnmeow.com/favicon.svg',
@@ -18,7 +18,7 @@ export const PageHead = {
     },
     {
       rel: 'stylesheet',
-      href: 'https://cdn.jsdelivr.net/npm/simpledotcss@2.3.0/simple.min.css',
+      href: 'https://unpkg.com/simpledotcss@2.3.0/simple.min.css',
     },
   ],
 }
