@@ -30,7 +30,7 @@ export const PageBody = (req: Request) => (
     <h1>Hello World!</h1>
     <p>
       You're visiting <code>{(new URL(req.url)).hostname}</code>{' '}
-      and the domain is owned by <a href='https://nekohuan.cyou'>rnmeow</a>.
+      and the domain is owned by <a href='https://nekohuan.cyou'>@rnmeow</a>.
       <br />
       It is currently under development. Feel free to check for updates anytime!
     </p>
@@ -41,7 +41,7 @@ export const PageBody = (req: Request) => (
       </a>.
     </p>
     <footer>
-      &copy; {new Date().getFullYear()}, Yu-huan Kuo.
+      &copy; {new Date().getFullYear()}, Connor Kuo.
     </footer>
   </div>
 )
