@@ -2,7 +2,7 @@
 import { h } from "htm";
 
 // deno-lint-ignore no-explicit-any
-export const indxHead: Record<string, any> = {
+export const indexHead: Record<string, any> = {
   lang: "en",
   title: "It's Parkin'",
   meta: {
@@ -24,7 +24,7 @@ export const indxHead: Record<string, any> = {
   ],
 };
 
-export const indxBody = (req: Request) => (
+export const indexBody = (req: Request) => (
   <div>
     <h1>Hello World!</h1>
     <p>
