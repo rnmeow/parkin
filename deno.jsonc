@@ -7,6 +7,6 @@
     "semiColons": false,
     "singleQuote": true,
     "proseWrap": "preserve",
-    "include": ["server.ts", "src/"]
+    "include": ["server.ts", "pages/"]
   }
 }
