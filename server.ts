@@ -1,5 +1,5 @@
 import html from "htm";
 
-import { indxBody, indxHead } from "./pages/index.tsx";
+import { indexBody, indexHead } from "./pages/index.tsx";
 
-Deno.serve((req) => html({ ...indxHead, body: indxBody(req) }));
+Deno.serve((req) => html({ ...indexHead, body: indexBody(req) }));
