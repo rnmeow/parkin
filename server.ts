@@ -1,6 +1,5 @@
-import html from 'htm'
+import html from "htm";
 
-import { PageBody, PageHead } from './src/page.tsx'
+import { indxBody, indxHead } from "./pages/index.tsx";
 
-// deno-lint-ignore no-explicit-any
-Deno.serve((req) => html({ ...PageHead as any, body: PageBody(req) }))
+Deno.serve((req) => html({ ...indxHead, body: indxBody(req) }));
