@@ -10,8 +10,15 @@ export const indexHead: Record<string, any> = {
     description: 'This website is UNDER DEVELOPMENT.',
   },
   links: [
-    { rel: 'preconnect', href: 'https://unpkg.com', crossorigin: '' },
-    { rel: 'dns-prefetch', href: 'https://unpkg.com' },
+    {
+      rel: 'preconnect',
+      href: 'https://cdnjs.cloudflare.com',
+      crossorigin: '',
+    },
+    {
+      rel: 'dns-prefetch',
+      href: 'https://cdnjs.cloudflare.com',
+    },
     {
       rel: 'shortcut icon',
       href:
@@ -20,7 +27,12 @@ export const indexHead: Record<string, any> = {
     },
     {
       rel: 'stylesheet',
-      href: 'https://unpkg.com/simpledotcss@2.3.0/simple.min.css',
+      href:
+        'https://cdnjs.cloudflare.com/ajax/libs/simpledotcss/2.3.0/simple.min.css',
+      integrity:
+        'sha512-j7yBUXH7jvayufNb3tc9lSrXHHu9R7J6364WUd/gEVO+El9pYvHyoqOzbMzk+58Ul/7FpTtDNhwJYe8OK7UKBw==',
+      crossorigin: 'anonymous',
+      referrerpolicy: 'no-referrer',
     },
   ],
 }
