@@ -1,9 +1,9 @@
-import html from 'htm'
+import htm from 'htm'
 
 import { indexBody, indexHead } from './pages/index.tsx'
 
 Deno.serve((req) =>
-  html({
+  htm({
     ...indexHead,
     body: indexBody(req),
   })
