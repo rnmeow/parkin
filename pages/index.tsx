@@ -1,8 +1,9 @@
 /** @jsx h */
 import { h } from 'htm'
 
-// deno-lint-ignore no-explicit-any
-export const indexHead: Record<string, any> = {
+export const indexHead: {
+  [key: string]: string | Record<string, string> | Record<string, string>[]
+} = {
   lang: 'en',
   title: "It's Parkin'",
   meta: {
