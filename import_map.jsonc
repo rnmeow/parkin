@@ -1,5 +1,0 @@
-{
-  "imports": {
-    "htm": "https://deno.land/x/htm@0.2.3/mod.ts"
-  }
-}
