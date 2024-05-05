@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>It's Parkin'</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="This website is UNDER DEVELOPMENT." />
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
+    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com" />
+
+    <link rel="shortcut icon" href="/favicon.svg" type="image/svg+xml" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/simpledotcss/2.3.0/simple.min.css"
+      integrity="sha512-j7yBUXH7jvayufNb3tc9lSrXHHu9R7J6364WUd/gEVO+El9pYvHyoqOzbMzk+58Ul/7FpTtDNhwJYe8OK7UKBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div>
+      <h1>Hello World!</h1>
+      <p>
+        You're visiting <code class="domain"></code> and the domain is owned by
+        <a href="https://nekohuan.cyou" title="My homepage">@rnmeow</a>.
+        <br />
+        It is currently under development. Feel free to check for updates anytime!
+      </p>
+      <p>
+        The source of this page is available
+        <a href="https://github.com/rnmeow/parkin" title="GitHub repo">here</a>.
+      </p>
+      <footer>&copy; <span class="copyright-year"></span>, Connor Kuo.</footer>
+    </div>
+
+    <script>
+      document.querySelector('.domain').textContent = window.location.hostname
+      document.querySelector('.copyright-year').textContent = new Date().getFullYear()
+    </script>
+  </body>
+</html>
