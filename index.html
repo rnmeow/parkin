@@ -35,8 +35,10 @@
     </div>
 
     <script>
-      document.querySelector('.domain').textContent = window.location.hostname
-      document.querySelector('.copyright-year').textContent = new Date().getFullYear()
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelector('.domain').textContent = window.location.hostname
+        document.querySelector('.copyright-year').textContent = new Date().getFullYear()
+      })
     </script>
   </body>
 </html>
