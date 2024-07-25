@@ -25,6 +25,8 @@
         You're visiting <code class="domain"># domain loading #</code> and the domain is owned by
         <a href="https://nekohuan.cyou" title="My homepage">@rnmeow</a>.
         <br />
+        The registration will be expired at <span class="expire"># date loading #</span>.
+        <br />
         It is currently under development. Feel free to check for updates anytime!
       </p>
       <p>
@@ -35,10 +37,34 @@
     </div>
 
     <script>
+      var now = new Date()
+
       document.addEventListener('DOMContentLoaded', function () {
         document.querySelector('.domain').textContent = window.location.hostname
-        document.querySelector('.copyright-year').textContent = new Date().getFullYear()
+        document.querySelector('.copyright-year').textContent = now.getFullYear()
       })
+
+      var req = new XMLHttpRequest()
+
+      req.overrideMimeType('application/json')
+      req.open('GET', 'https://who-dat.as93.net/' + window.location.hostname)
+      req.addEventListener('load', function () {
+        var jsonResp = JSON.parse(this.responseText)
+        var expDate = new Date(jsonResp.domain.expiration_date)
+        var formatter = new Intl.DateTimeFormat(
+          'en-IE',
+          {
+            timeZone: 'Asia/Taipei',
+
+            dateStyle: 'medium',
+            timeStyle: undefined,
+          }
+        )
+
+        document.querySelector('.expire').textContent = formatter.format(expDate)
+      })
+
+      req.send()
     </script>
   </body>
 </html>
