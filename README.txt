@@ -3,7 +3,6 @@ parkin
 
 The landing page for my under-development domains:
 
-- <https://a-ma.zip>
 - <https://m3huan.tw>
 - <https://omegasterisk.art>
 - <https://rnmeow.com>
@@ -13,4 +12,4 @@ The landing page for my under-development domains:
 
 ***
 
-17 APR 2024
+17 APR 2024 (LAST REVISED: 21 OCT)
