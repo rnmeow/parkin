@@ -55,10 +55,10 @@
       var req = new XMLHttpRequest()
 
       req.overrideMimeType('application/json')
-      req.open('GET', 'https://who-dat.as93.net/' + window.location.hostname)
+      req.open('GET', 'https://uapis.cn/api/whois.php?domain=' + window.location.hostname)
       req.addEventListener('load', function () {
         var jsonResp = JSON.parse(this.responseText)
-        var expDate = new Date(jsonResp.domain.expiration_date)
+        var expDate = new Date(jsonResp.exp_date)
         var formatter = new Intl.DateTimeFormat('en-IE', {
           timeZone: 'Asia/Taipei',
 
