@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -25,11 +25,8 @@
     <div>
       <h1>Hello World!</h1>
       <p>
-        You're visiting <code class="domain"># domain loading #</code> and the
-        domain is owned by @rnmeow.
-        <br />
-        The registration will be expired at
-        <span class="expire"># date loading #</span>.
+        You're visiting <code class="domainName"># domain loading #</code> and
+        the domain is owned by @rnmeow.
         <br />
         I'm creating something here. Feel free to check
         <a href="https://nekohuan.cyou" title="My homepage"
@@ -41,36 +38,15 @@
         <a href="https://github.com/rnmeow/parkin" title="GitHub repo">here</a>.
       </p>
       <footer>
-        &copy; <span class="copyright-year"># year loading #</span>, Yu-huan
-        "Connor" Kuo.
+        &copy; <span class="copyrightYear"># year loading #</span>, Connor Kuo.
       </footer>
     </div>
 
     <script defer>
-      var now = new Date()
-
-      document.querySelector('.domain').textContent = window.location.hostname
-      document.querySelector('.copyright-year').textContent = now.getFullYear()
-
-      var req = new XMLHttpRequest()
-
-      req.overrideMimeType('application/json')
-      req.open('GET', 'https://who-dat.as93.net/' + window.location.hostname)
-      req.addEventListener('load', function () {
-        var jsonResp = JSON.parse(this.responseText)
-        var expDate = new Date(jsonResp.domain.expiration_date)
-        var formatter = new Intl.DateTimeFormat('en-IE', {
-          timeZone: 'Asia/Taipei',
-
-          dateStyle: 'medium',
-          timeStyle: undefined,
-        })
-
-        document.getElementsByClassName('expire')[0].textContent =
-          formatter.format(expDate)
-      })
-
-      req.send()
+      document.querySelector(".domainName").textContent =
+        window.location.hostname;
+      document.querySelector(".copyrightYear").textContent =
+        new Date().getFullYear();
     </script>
   </body>
 </html>
